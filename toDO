@@ -1,12 +1,19 @@
-sticky navbar
++ -> sticky navbar
 upload cover image
 editor ***
 
 templates
 browse
 qa.
-base.html
-login logout
-notification
++ -> base.html
++ -> login logout
+<- notification
 
 codes and documents to download as zip
+
+template home
+dummies _, universal dummy download img, predict type, very good.
+    -> product, project, users
+search, auto complete
+media.py
+delete project

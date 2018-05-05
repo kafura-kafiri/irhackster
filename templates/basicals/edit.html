@@ -1,0 +1,830 @@
+{% extends "projects/edit.html" %}
+{% block main %}
+    <div id="main">
+        <div id="content">
+            <div class="container">
+                <div class="container project-editor">
+                    <div class="clearfix text-center">
+                        <ol class="pe-nav">
+                            <li><a id="basics-nav" class="active tab" href="#basics">Basics</a></li>
+                            <li><a id="team-nav" class="tab" href="#team">Team</a></li>
+                            <li><a id="things-nav" class="tab" href="#things">Things</a></li>
+                            <li><a id="story-nav" class="tab" href="#story">Story</a></li>
+                            <li><a id="attachments-nav" class="tab" href="#attachments">Attachments</a></li>
+                        </ol>
+                        <ol class="pe-nav">
+                            <li><a href="/kafurakafiri/fwef-1760d4">Go to project</a></li>
+                        </ol>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="pe-container" style="height:100px">
+                                <div class="busy-overlay">
+                                    <div class="center-align-wrapper">
+                                        <div class="center-align-inner"><i class="fa fa-spin fa-refresh"></i></div>
+                                    </div>
+                                </div>
+                                <div class="pe-panel text-center" id="loader" style="display:none"><p><i
+                                        class="fa fa-spin fa-spinner"></i></p>
+                                    <p class="small">Editor not loading? Try refreshing the page.</p></div>
+                                <div class="pe-panel" id="basics">
+                                    <form data-remote="true"
+                                          class="simple_form form-horizontal remote accept-file-upload"
+                                          novalidate="novalidate" id="edit_base_article_90740"
+                                          action="/kafurakafiri/fwef-1760d4" accept-charset="UTF-8" method="post"><input
+                                            name="utf8" type="hidden" value="&#x2713;"/><input type="hidden"
+                                                                                               name="_method"
+                                                                                               value="patch"/><input
+                                            type="hidden" name="authenticity_token"
+                                            value="XrV9asfWONx7zoHy2Ze6ENlMUVVHrNfgh23FnbLAd+I7d3OsT7lQs7mw741kKV+zjxfyb/0n6RBXm+ryFcmSPA=="/><input
+                                            name="panel" type="hidden" value="basics"/>
+                                        <div class="pe-header"><h2>The basics</h2>
+                                            <div class="subheading">Get started with your project</div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-content">
+                                                <div data-anchor="name"
+                                                     class="form-group string optional base_article_name">
+                                                    <div class="col-sm-4"><label class="string optional control-label"
+                                                                                 for="base_article_name">Project
+                                                        name</label></div>
+                                                    <div class="col-sm-8"><input class="string optional form-control"
+                                                                                 maxlength="60" size="60" type="text"
+                                                                                 value="fwef" name="base_article[name]"
+                                                                                 id="base_article_name"/><span
+                                                            class="help-block">Make it sound cool! 60 characters max.</span>
+                                                    </div>
+                                                </div>
+                                                <div data-anchor="one_liner"
+                                                     class="form-group text optional base_article_one_liner">
+                                                    <div class="col-sm-4"><label class="text optional control-label"
+                                                                                 for="base_article_one_liner">Elevator
+                                                        pitch</label></div>
+                                                    <div class="col-sm-8"><textarea rows="3"
+                                                                                    class="text optional form-control"
+                                                                                    maxlength="140"
+                                                                                    name="base_article[one_liner]"
+                                                                                    id="base_article_one_liner">
+fwef</textarea><span class="help-block">Describe your project in one short sentence</span></div>
+                                                </div>
+                                                <div data-anchor="cover_image">
+                                                    <div data-react-class="ImageUploader"
+                                                         data-react-props="{&quot;file_type&quot;:&quot;cover_image&quot;,&quot;human_file_type&quot;:&quot;Cover image&quot;,&quot;attribute_type&quot;:&quot;cover_image&quot;,&quot;image_version&quot;:&quot;cover_mini_thumb&quot;,&quot;preview_link&quot;:&quot;https://www.hackster.io/assets/project_default_cover_thumb_image-811135fcf756e047fa4ced88852840a08e1fca225de68eb1c6fe14c70c222f56.png&quot;,&quot;error&quot;:[],&quot;model&quot;:&quot;base_article&quot;,&quot;help_block&quot;:&quot;A high quality image representing your work. It will be cropped to fit 4:3 format. 900x675px or higher recommended.&quot;,&quot;image_data&quot;:{&quot;id&quot;:null,&quot;file&quot;:{&quot;url&quot;:null}},&quot;displayMode&quot;:&quot;inline&quot;,&quot;S3BucketURL&quot;:&quot;https://halckemy.s3.amazonaws.com&quot;,&quot;AWSAccessKeyId&quot;:&quot;AKIAJIDYI4LI7VOFSTEQ&quot;}"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pe-save2">
+                                            <div class="clearfix">
+                                                <div class="pe-error">Error saving</div>
+                                                <div class="pull-right"><a class="btn btn-link pe-discard"
+                                                                           href="/kafurakafiri/fwef-1760d4">Discard
+                                                    changes</a><a class="btn btn-primary pe-submit"
+                                                                  href="javascript:void(0);">Save changes</a></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="pe-panel" id="team">
+                                    <form data-remote="true" class="simple_form form-horizontal remote"
+                                          novalidate="novalidate" id="edit_base_article_90740"
+                                          action="/kafurakafiri/fwef-1760d4" accept-charset="UTF-8" method="post"><input
+                                            name="utf8" type="hidden" value="&#x2713;"/><input type="hidden"
+                                                                                               name="_method"
+                                                                                               value="patch"/><input
+                                            type="hidden" name="authenticity_token"
+                                            value="GXHUYwHeSNNojHQNGnEwVRTT/asbWIwrWdxvKostmKN8s9qlibEgvKryGnKnz9X2QohekaHTstuJKkBFLCR9fQ=="/><input
+                                            name="panel" type="hidden" value="team"/>
+                                        <div class="pe-header"><h2>The team</h2>
+                                            <div class="subheading">Who made this?</div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-content">
+                                                <div id="team-form" style="">
+                                                    <div class="fields">
+                                                        <table class="table table-condensed">
+                                                            <thead>
+                                                            <th style="width:40%">User</th>
+                                                            <th>Permission</th>
+                                                            <th>Contribution</th>
+                                                            <th>Status</th>
+                                                            <th></th>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="fields">
+                                                                <td style="width:40%">
+                                                                    <div class="form-group hidden base_article_team_members_id">
+                                                                        <input class="hidden" type="hidden"
+                                                                               value="111086"
+                                                                               name="base_article[team_attributes][members_attributes][0][id]"
+                                                                               id="base_article_team_attributes_members_attributes_0_id"/>
+                                                                    </div>
+                                                                    <a href="/kafurakafiri">kafura kafiri</a></td>
+                                                                <td>
+                                                                    <div class="form-group select optional base_article_team_members_permission_action">
+                                                                        <select class="select optional form-control"
+                                                                                name="base_article[team_attributes][members_attributes][0][permission_action]"
+                                                                                id="base_article_team_attributes_members_attributes_0_permission_action">
+                                                                            <option value=""></option>
+                                                                            <option selected="selected" value="manage">
+                                                                                Manage
+                                                                            </option>
+                                                                            <option value="read">Read</option>
+                                                                        </select></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-group text optional base_article_team_members_mini_resume"><textarea
+                                                                            class="text optional form-control"
+                                                                            maxlength="250"
+                                                                            name="base_article[team_attributes][members_attributes][0][mini_resume]"
+                                                                            id="base_article_team_attributes_members_attributes_0_mini_resume">
+</textarea></div>
+                                                                </td>
+                                                                <td>Member</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="fields">
+                                                                <td style="width:40%">
+                                                                    <div class="form-group select optional base_article_team_members_user_id">
+                                                                        <select class="select optional form-control select2"
+                                                                                name="base_article[team_attributes][members_attributes][1][user_id]"
+                                                                                id="base_article_team_attributes_members_attributes_1_user_id">
+                                                                            <option value="">Select a user (type in
+                                                                                their name)
+                                                                            </option>
+                                                                        </select></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-group select optional base_article_team_members_permission_action">
+                                                                        <select class="select optional form-control"
+                                                                                name="base_article[team_attributes][members_attributes][1][permission_action]"
+                                                                                id="base_article_team_attributes_members_attributes_1_permission_action">
+                                                                            <option value=""></option>
+                                                                            <option selected="selected" value="manage">
+                                                                                Manage
+                                                                            </option>
+                                                                            <option value="read">Read</option>
+                                                                        </select></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-group text optional base_article_team_members_mini_resume"><textarea
+                                                                            class="text optional form-control"
+                                                                            maxlength="250"
+                                                                            name="base_article[team_attributes][members_attributes][1][mini_resume]"
+                                                                            id="base_article_team_attributes_members_attributes_1_mini_resume">
+</textarea></div>
+                                                                </td>
+                                                                <td>Not saved</td>
+                                                                <td><input type="hidden" value="false"
+                                                                           name="base_article[team_attributes][members_attributes][1][_destroy]"
+                                                                           id="base_article_team_attributes_members_attributes_1__destroy"/><a
+                                                                        class="btn btn-sm btn-danger remove_nested_fields"
+                                                                        data-association="members"
+                                                                        href="javascript:void(0)"><i
+                                                                        class="fa fa-times-circle-o"></i></a></td>
+                                                            </tr>
+                                                            <tr class="sortable-disabled">
+                                                                <td colspan="5"><a
+                                                                        class="btn btn-xs btn-success nested-field-table add_nested_fields"
+                                                                        data-association="members"
+                                                                        data-blueprint-id="team_members_fields_blueprint"
+                                                                        href="javascript:void(0)">Add a member</a></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <input type="hidden" value="96231"
+                                                               name="base_article[team_attributes][id]"
+                                                               id="base_article_team_attributes_id"/></div>
+                                                </div>
+                                                <div class="form-group boolean optional">
+                                                    <div class="col-xs-12"><input name="use_guest" type="hidden"
+                                                                                  value="0"/><label
+                                                            class="checkbox"><input type="checkbox" name="use_guest"
+                                                                                    id="use_guest" value="1"/>I'm not
+                                                        the project's author</label></div>
+                                                </div>
+                                                <div id="project-form" style="display:none;">
+                                                    <div class="form-group string optional base_article_guest_name">
+                                                        <div class="col-sm-4"><label
+                                                                class="string optional control-label" for="guest_name">Author
+                                                            name</label></div>
+                                                        <div class="col-sm-8"><input id="guest_name"
+                                                                                     class="string optional form-control"
+                                                                                     maxlength="128" size="128"
+                                                                                     type="text"
+                                                                                     name="base_article[guest_name]"/><span
+                                                                class="help-block">Use this field if you&#39;re posting this project on behalf of somebody else. The project team will only consist of this author. Your name will show as &quot;Posted by&quot;.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-title small-title"><h4>Work attribution</h4>
+                                                <div class="subheading">If you're using other people's work, give them a
+                                                    shout here
+                                                </div>
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="form-fields">
+                                                    <div class="fields">
+                                                        <div class="form-group string optional base_article_credit_lines_name">
+                                                            <div class="col-sm-4"><label
+                                                                    class="string optional control-label"
+                                                                    for="base_article_credit_lines_attributes_0_name">Contributor
+                                                                name</label></div>
+                                                            <div class="col-sm-8"><input
+                                                                    class="string optional form-control" type="text"
+                                                                    name="base_article[credit_lines_attributes][0][name]"
+                                                                    id="base_article_credit_lines_attributes_0_name"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group string optional base_article_credit_lines_work">
+                                                            <div class="col-sm-4"><label
+                                                                    class="string optional control-label"
+                                                                    for="base_article_credit_lines_attributes_0_work">What
+                                                                you credit them for</label></div>
+                                                            <div class="col-sm-8"><input
+                                                                    class="string optional form-control" type="text"
+                                                                    name="base_article[credit_lines_attributes][0][work]"
+                                                                    id="base_article_credit_lines_attributes_0_work"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group string optional base_article_credit_lines_link">
+                                                            <div class="col-sm-4"><label
+                                                                    class="string optional control-label"
+                                                                    for="base_article_credit_lines_attributes_0_link">Link
+                                                                (optional)</label></div>
+                                                            <div class="col-sm-8"><input
+                                                                    class="string optional form-control" type="text"
+                                                                    name="base_article[credit_lines_attributes][0][link]"
+                                                                    id="base_article_credit_lines_attributes_0_link"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-offset-4 col-md-8"><input type="hidden"
+                                                                                                         value="false"
+                                                                                                         name="base_article[credit_lines_attributes][0][_destroy]"
+                                                                                                         id="base_article_credit_lines_attributes_0__destroy"/><a
+                                                                    class="btn btn-xs btn-danger remove_nested_fields"
+                                                                    data-association="credit_lines"
+                                                                    href="javascript:void(0)">Remove this
+                                                                contributor</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn btn-xs btn-success add_nested_fields"
+                                                       style="margin:0 0 0 33.33333%;" data-association="credit_lines"
+                                                       data-blueprint-id="credit_lines_fields_blueprint"
+                                                       href="javascript:void(0)">Add another contributor</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="pe-save2">
+                                            <div class="clearfix">
+                                                <div class="pe-error">Error saving</div>
+                                                <div class="pull-right"><a class="btn btn-link pe-discard"
+                                                                           href="/kafurakafiri/fwef-1760d4">Discard
+                                                    changes</a><a class="btn btn-primary pe-submit"
+                                                                  href="javascript:void(0);">Save changes</a></div>
+                                            </div>
+                                        </div>
+                                        <div id="team_members_fields_blueprint" style="display: none"
+                                             data-blueprint="&lt;tr class=&quot;fields&quot;&gt;&lt;td style=&quot;width:40%&quot;&gt;&lt;div class=&quot;form-group select optional base_article_team_members_user_id&quot;&gt;&lt;select class=&quot;select optional form-control select2&quot; name=&quot;base_article[team_attributes][members_attributes][new_members][user_id]&quot; id=&quot;base_article_team_attributes_members_attributes_new_members_user_id&quot;&gt;&lt;option value=&quot;&quot;&gt;Select a user (type in their name)&lt;/option&gt;
+&lt;/select&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;form-group select optional base_article_team_members_permission_action&quot;&gt;&lt;select class=&quot;select optional form-control&quot; name=&quot;base_article[team_attributes][members_attributes][new_members][permission_action]&quot; id=&quot;base_article_team_attributes_members_attributes_new_members_permission_action&quot;&gt;&lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+&lt;option value=&quot;manage&quot;&gt;Manage&lt;/option&gt;
+&lt;option value=&quot;read&quot;&gt;Read&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;div class=&quot;form-group text optional base_article_team_members_mini_resume&quot;&gt;&lt;textarea class=&quot;text optional form-control&quot; maxlength=&quot;250&quot; name=&quot;base_article[team_attributes][members_attributes][new_members][mini_resume]&quot; id=&quot;base_article_team_attributes_members_attributes_new_members_mini_resume&quot;&gt;
+&lt;/textarea&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;Not saved&lt;/td&gt;&lt;td&gt;&lt;input type=&quot;hidden&quot; value=&quot;false&quot; name=&quot;base_article[team_attributes][members_attributes][new_members][_destroy]&quot; id=&quot;base_article_team_attributes_members_attributes_new_members__destroy&quot; /&gt;&lt;a class=&quot;btn btn-sm btn-danger remove_nested_fields&quot; data-association=&quot;members&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;fa fa-times-circle-o&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;"></div>
+                                        <div id="credit_lines_fields_blueprint" style="display: none"
+                                             data-blueprint="&lt;div class=&quot;fields&quot;&gt;&lt;div class=&quot;form-group string optional base_article_credit_lines_name&quot;&gt;&lt;div class=&quot;col-sm-4&quot;&gt;&lt;label class=&quot;string optional control-label&quot; for=&quot;base_article_credit_lines_attributes_new_credit_lines_name&quot;&gt;Contributor name&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8&quot;&gt;&lt;input class=&quot;string optional form-control&quot; type=&quot;text&quot; name=&quot;base_article[credit_lines_attributes][new_credit_lines][name]&quot; id=&quot;base_article_credit_lines_attributes_new_credit_lines_name&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;form-group string optional base_article_credit_lines_work&quot;&gt;&lt;div class=&quot;col-sm-4&quot;&gt;&lt;label class=&quot;string optional control-label&quot; for=&quot;base_article_credit_lines_attributes_new_credit_lines_work&quot;&gt;What you credit them for&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8&quot;&gt;&lt;input class=&quot;string optional form-control&quot; type=&quot;text&quot; name=&quot;base_article[credit_lines_attributes][new_credit_lines][work]&quot; id=&quot;base_article_credit_lines_attributes_new_credit_lines_work&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;form-group string optional base_article_credit_lines_link&quot;&gt;&lt;div class=&quot;col-sm-4&quot;&gt;&lt;label class=&quot;string optional control-label&quot; for=&quot;base_article_credit_lines_attributes_new_credit_lines_link&quot;&gt;Link (optional)&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8&quot;&gt;&lt;input class=&quot;string optional form-control&quot; type=&quot;text&quot; name=&quot;base_article[credit_lines_attributes][new_credit_lines][link]&quot; id=&quot;base_article_credit_lines_attributes_new_credit_lines_link&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-xs-offset-4 col-md-8&quot;&gt;&lt;input type=&quot;hidden&quot; value=&quot;false&quot; name=&quot;base_article[credit_lines_attributes][new_credit_lines][_destroy]&quot; id=&quot;base_article_credit_lines_attributes_new_credit_lines__destroy&quot; /&gt;&lt;a class=&quot;btn btn-xs btn-danger remove_nested_fields&quot; data-association=&quot;credit_lines&quot; href=&quot;javascript:void(0)&quot;&gt;Remove this contributor&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"></div>
+                                    </form>
+                                </div>
+                                <div class="pe-panel" id="things">
+                                    <form data-remote="true" class="simple_form form-horizontal remote sortable"
+                                          novalidate="novalidate" id="edit_base_article_90740"
+                                          action="/kafurakafiri/fwef-1760d4" accept-charset="UTF-8" method="post"><input
+                                            name="utf8" type="hidden" value="&#x2713;"/><input type="hidden"
+                                                                                               name="_method"
+                                                                                               value="patch"/><input
+                                            type="hidden" name="authenticity_token"
+                                            value="cSoGO9AwbjXlnxJFg8pzybOiUkVFdCGMsZepEFxjyyoU6Aj9WF8GWifhfDo+dJZq5fnxf///H3xhYYZ/+2ou9A=="/><input
+                                            name="panel" type="hidden" value="things"/><input name="save" type="hidden"
+                                                                                              value="1"/>
+                                        <div class="pe-header"><h2>Things</h2>
+                                            <div class="subheading">What does one need to replicate this project? This
+                                                is an extended bill of materials.
+                                            </div>
+                                        </div>
+                                        <div class="box" data-anchor="hardware_parts">
+                                            <div class="box-title small-title"><h4>Hardware components</h4></div>
+                                            <div class="box-content">
+                                                <div id="hardware-parts-form">
+                                                    <ul class="list-unstyled parts-widget">
+                                                        <li class="fields">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td colspan="2"
+                                                                        style="background:white;padding:5px 0;">
+                                                                        <div class="form-group hidden base_article_hardware_part_joins_id">
+                                                                            <input class="hidden id" type="hidden"
+                                                                                   name="base_article[hardware_part_joins_attributes][0][id]"
+                                                                                   id="base_article_hardware_part_joins_attributes_0_id"/>
+                                                                        </div>
+                                                                        <div class="form-group hidden base_article_hardware_part_joins_position">
+                                                                            <input class="hidden position" type="hidden"
+                                                                                   value="0"
+                                                                                   name="base_article[hardware_part_joins_attributes][0][position]"
+                                                                                   id="base_article_hardware_part_joins_attributes_0_position"/>
+                                                                        </div>
+                                                                        <input data-field-type="type" type="hidden"
+                                                                               value="hardware"/><input
+                                                                            data-field-type="method" type="hidden"
+                                                                            value="post"/><input class="reset"
+                                                                                                 data-field-type="id"
+                                                                                                 type="hidden"/><input
+                                                                            class="reset" data-field-type="name"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="store_link"
+                                                                                                  type="hidden"/><input
+                                                                            class="reset"
+                                                                            data-field-type="product_page_link"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="status"
+                                                                                                  type="hidden"/><input
+                                                                            class="reset" data-field-type="url"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="platform_id"
+                                                                                                  type="hidden"/>
+                                                                        <ul class="list-inline pull-right">
+                                                                            <li>
+                                                                                <a class="btn btn-default btn-xs move-up"
+                                                                                   href=""><i
+                                                                                        class="fa fa-angle-up"></i></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="btn btn-default btn-xs move-down"
+                                                                                   href=""><i
+                                                                                        class="fa fa-angle-down"></i></a>
+                                                                            </li>
+                                                                            <li><input type="hidden" value="false"
+                                                                                       name="base_article[hardware_part_joins_attributes][0][_destroy]"
+                                                                                       id="base_article_hardware_part_joins_attributes_0__destroy"/><a
+                                                                                    class="btn btn-danger btn-xs remove_nested_fields"
+                                                                                    data-association="hardware_part_joins"
+                                                                                    href="javascript:void(0)"><i
+                                                                                    class="fa fa-times"></i> Delete</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:85%">
+                                                                        <div class="form-group"><label
+                                                                                class="control-label"><abbr
+                                                                                title="required">*</abbr><span> Component</span></label><select
+                                                                                class="form-control select2"
+                                                                                name="base_article[hardware_part_joins_attributes][0][part_id]"
+                                                                                id="base_article_hardware_0_name"
+                                                                                data-placeholder="Select a component"
+                                                                                data-type="hardware"
+                                                                                data-link-type="store_link">
+                                                                            <option></option>
+                                                                        </select></div>
+                                                                    </td>
+                                                                    <td style="width:15%;">
+                                                                        <div class="form-group integer optional base_article_hardware_part_joins_quantity">
+                                                                            <label class="integer optional control-label times"
+                                                                                   style="height:68px;padding-top:21px;"
+                                                                                   for="base_article_hardware_part_joins_attributes_0_quantity">&times;</label><input
+                                                                                style="width:calc(100% - 30px) !important;height:68px;"
+                                                                                class="numeric integer optional form-control form-control"
+                                                                                min="1" type="number" step="1" value="1"
+                                                                                name="base_article[hardware_part_joins_attributes][0][quantity]"
+                                                                                id="base_article_hardware_part_joins_attributes_0_quantity"/>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="default-hidden" data-name="part-comment">
+                                                                    <td colspan="2">
+                                                                        <div class="form-group text optional base_article_hardware_part_joins_comment">
+                                                                            <label class="text optional control-label"
+                                                                                   for="base_article_hardware_part_joins_attributes_0_comment">Comment</label><textarea
+                                                                                class="text optional form-control"
+                                                                                name="base_article[hardware_part_joins_attributes][0][comment]"
+                                                                                id="base_article_hardware_part_joins_attributes_0_comment">
+</textarea></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" style="padding:5px 10px">
+                                                                        <ul class="list-inline">
+                                                                            <li><a data-target="part-comment"
+                                                                                   class="reveal btn btn-link btn-xs"
+                                                                                   href="">Add comment</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </li>
+                                                        <a class="btn btn-success btn-sm btn-block add_nested_fields"
+                                                           data-association="hardware_part_joins"
+                                                           data-blueprint-id="hardware_part_joins_fields_blueprint"
+                                                           href="javascript:void(0)">Add another component</a></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box" data-anchor="tools">
+                                            <div class="box-title small-title"><h4>Software OSs, Apps and online
+                                                services</h4></div>
+                                            <div class="box-content">
+                                                <div id="software-parts-form">
+                                                    <ul class="list-unstyled parts-widget">
+                                                        <li class="fields">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td colspan="2"
+                                                                        style="background:white;padding:5px 0;">
+                                                                        <div class="form-group hidden base_article_software_part_joins_id">
+                                                                            <input class="hidden id" type="hidden"
+                                                                                   name="base_article[software_part_joins_attributes][0][id]"
+                                                                                   id="base_article_software_part_joins_attributes_0_id"/>
+                                                                        </div>
+                                                                        <div class="form-group hidden base_article_software_part_joins_position">
+                                                                            <input class="hidden position" type="hidden"
+                                                                                   value="0"
+                                                                                   name="base_article[software_part_joins_attributes][0][position]"
+                                                                                   id="base_article_software_part_joins_attributes_0_position"/>
+                                                                        </div>
+                                                                        <input data-field-type="type" type="hidden"
+                                                                               value="software"/><input
+                                                                            data-field-type="method" type="hidden"
+                                                                            value="post"/><input class="reset"
+                                                                                                 data-field-type="id"
+                                                                                                 type="hidden"/><input
+                                                                            class="reset" data-field-type="name"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="store_link"
+                                                                                                  type="hidden"/><input
+                                                                            class="reset"
+                                                                            data-field-type="product_page_link"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="status"
+                                                                                                  type="hidden"/><input
+                                                                            class="reset" data-field-type="url"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="platform_id"
+                                                                                                  type="hidden"/>
+                                                                        <ul class="list-inline pull-right">
+                                                                            <li>
+                                                                                <a class="btn btn-default btn-xs move-up"
+                                                                                   href=""><i
+                                                                                        class="fa fa-angle-up"></i></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="btn btn-default btn-xs move-down"
+                                                                                   href=""><i
+                                                                                        class="fa fa-angle-down"></i></a>
+                                                                            </li>
+                                                                            <li><input type="hidden" value="false"
+                                                                                       name="base_article[software_part_joins_attributes][0][_destroy]"
+                                                                                       id="base_article_software_part_joins_attributes_0__destroy"/><a
+                                                                                    class="btn btn-danger btn-xs remove_nested_fields"
+                                                                                    data-association="software_part_joins"
+                                                                                    href="javascript:void(0)"><i
+                                                                                    class="fa fa-times"></i> Delete</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="form-group"><label
+                                                                                class="control-label"><abbr
+                                                                                title="required">*</abbr><span> App</span></label><select
+                                                                                class="form-control select2"
+                                                                                name="base_article[software_part_joins_attributes][0][part_id]"
+                                                                                id="base_article_software_0_name"
+                                                                                data-placeholder="Select an app"
+                                                                                data-type="software"
+                                                                                data-link-type="product_page_link">
+                                                                            <option></option>
+                                                                        </select></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="default-hidden" data-name="part-comment">
+                                                                    <td colspan="2">
+                                                                        <div class="form-group text optional base_article_software_part_joins_comment">
+                                                                            <label class="text optional control-label"
+                                                                                   for="base_article_software_part_joins_attributes_0_comment">Comment</label><textarea
+                                                                                class="text optional form-control"
+                                                                                name="base_article[software_part_joins_attributes][0][comment]"
+                                                                                id="base_article_software_part_joins_attributes_0_comment">
+</textarea></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" style="padding:5px 10px">
+                                                                        <ul class="list-inline">
+                                                                            <li><a data-target="part-comment"
+                                                                                   class="reveal btn btn-link btn-xs"
+                                                                                   href="">Add comment</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </li>
+                                                        <a class="btn btn-success btn-sm btn-block add_nested_fields"
+                                                           data-association="software_part_joins"
+                                                           data-blueprint-id="software_part_joins_fields_blueprint"
+                                                           href="javascript:void(0)">Add another app</a></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box" data-anchor="tools">
+                                            <div class="box-title small-title"><h4>Hand tools and fabrication
+                                                machines</h4></div>
+                                            <div class="box-content">
+                                                <div id="tool-parts-form">
+                                                    <ul class="list-unstyled parts-widget">
+                                                        <li class="fields">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td colspan="2"
+                                                                        style="background:white;padding:5px 0;">
+                                                                        <div class="form-group hidden base_article_tool_part_joins_id">
+                                                                            <input class="hidden id" type="hidden"
+                                                                                   name="base_article[tool_part_joins_attributes][0][id]"
+                                                                                   id="base_article_tool_part_joins_attributes_0_id"/>
+                                                                        </div>
+                                                                        <div class="form-group hidden base_article_tool_part_joins_position">
+                                                                            <input class="hidden position" type="hidden"
+                                                                                   value="0"
+                                                                                   name="base_article[tool_part_joins_attributes][0][position]"
+                                                                                   id="base_article_tool_part_joins_attributes_0_position"/>
+                                                                        </div>
+                                                                        <input data-field-type="type" type="hidden"
+                                                                               value="tool"/><input
+                                                                            data-field-type="method" type="hidden"
+                                                                            value="post"/><input class="reset"
+                                                                                                 data-field-type="id"
+                                                                                                 type="hidden"/><input
+                                                                            class="reset" data-field-type="name"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="store_link"
+                                                                                                  type="hidden"/><input
+                                                                            class="reset"
+                                                                            data-field-type="product_page_link"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="status"
+                                                                                                  type="hidden"/><input
+                                                                            class="reset" data-field-type="url"
+                                                                            type="hidden"/><input class="reset"
+                                                                                                  data-field-type="platform_id"
+                                                                                                  type="hidden"/>
+                                                                        <ul class="list-inline pull-right">
+                                                                            <li>
+                                                                                <a class="btn btn-default btn-xs move-up"
+                                                                                   href=""><i
+                                                                                        class="fa fa-angle-up"></i></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="btn btn-default btn-xs move-down"
+                                                                                   href=""><i
+                                                                                        class="fa fa-angle-down"></i></a>
+                                                                            </li>
+                                                                            <li><input type="hidden" value="false"
+                                                                                       name="base_article[tool_part_joins_attributes][0][_destroy]"
+                                                                                       id="base_article_tool_part_joins_attributes_0__destroy"/><a
+                                                                                    class="btn btn-danger btn-xs remove_nested_fields"
+                                                                                    data-association="tool_part_joins"
+                                                                                    href="javascript:void(0)"><i
+                                                                                    class="fa fa-times"></i> Delete</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="form-group"><label
+                                                                                class="control-label"><abbr
+                                                                                title="required">*</abbr><span> Tool</span></label><select
+                                                                                class="form-control select2"
+                                                                                name="base_article[tool_part_joins_attributes][0][part_id]"
+                                                                                id="base_article_tool_0_name"
+                                                                                data-placeholder="Select a tool"
+                                                                                data-type="tool"
+                                                                                data-link-type="store_link">
+                                                                            <option></option>
+                                                                        </select></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="default-hidden" data-name="part-comment">
+                                                                    <td colspan="2">
+                                                                        <div class="form-group text optional base_article_tool_part_joins_comment">
+                                                                            <label class="text optional control-label"
+                                                                                   for="base_article_tool_part_joins_attributes_0_comment">Comment</label><textarea
+                                                                                class="text optional form-control"
+                                                                                name="base_article[tool_part_joins_attributes][0][comment]"
+                                                                                id="base_article_tool_part_joins_attributes_0_comment">
+</textarea></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" style="padding:5px 10px">
+                                                                        <ul class="list-inline">
+                                                                            <li><a data-target="part-comment"
+                                                                                   class="reveal btn btn-link btn-xs"
+                                                                                   href="">Add comment</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </li>
+                                                        <a class="btn btn-success btn-sm btn-block add_nested_fields"
+                                                           data-association="tool_part_joins"
+                                                           data-blueprint-id="tool_part_joins_fields_blueprint"
+                                                           href="javascript:void(0)">Add another tool</a></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pe-save2">
+                                            <div class="clearfix">
+                                                <div class="pe-error">Error saving</div>
+                                                <div class="pull-right"><a class="btn btn-link pe-discard"
+                                                                           href="/kafurakafiri/fwef-1760d4">Discard
+                                                    changes</a><a class="btn btn-primary pe-submit"
+                                                                  href="javascript:void(0);">Save changes</a></div>
+                                            </div>
+                                        </div>
+                                        <div id="hardware_part_joins_fields_blueprint" style="display: none"
+                                             data-blueprint="&lt;li class=&quot;fields&quot;&gt;&lt;table class=&quot;table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:white;padding:5px 0;&quot;&gt;&lt;div class=&quot;form-group hidden base_article_hardware_part_joins_id&quot;&gt;&lt;input class=&quot;hidden id&quot; type=&quot;hidden&quot; name=&quot;base_article[hardware_part_joins_attributes][new_hardware_part_joins][id]&quot; id=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins_id&quot; /&gt;&lt;/div&gt;&lt;div class=&quot;form-group hidden base_article_hardware_part_joins_position&ququot;&gt;&lt;input class=&quot;hidden position&quot; type=&quot;hidden&quot; value=&quot;0&quot; name=&quot;base_article[hardware_part_joins_attributes][new_hardware_part_joins][position]&quot; id=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins_position&quot; /&gt;&lt;/div&gt;&lt;input data-field-type=&quot;type&quot; type=&quot;hidden&quot; value=&quot;hardware&quot; /&gt;&lt;input data-field-type=&quot;method&quot; type=&quot;hidden&quot; value=&quot;post&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;id&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;name&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;store_link&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;product_page_link&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;status&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;url&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;platform_id&quot; type=&quot;hidden&quot; /&gt;&lt;ul class=&quot;list-inline pull-right&quot;&gt;&lt;li&gt;&lt;a class=&quot;btn btn-default btn-xs move-up&quot; href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-angle-up&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;btn btn-default btn-xs move-down&quot; href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;input type=&quot;hidden&quot; value=&quot;false&quot; name=&quot;base_article[hardware_part_joins_attributes][new_hardware_part_joins][_destroy]&quot; id=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins__destroy&quot; /&gt;&lt;a class=&quot;btn btn-danger btn-xs remove_nested_fields&quot; data-association=&quot;hardware_part_joins&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;width:85%&quot;&gt;&lt;div class=&quot;form-group&quot;&gt;&lt;label class=&quot;control-label&quot;&gt;&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;span&gt; Component&lt;/span&gt;&lt;/label&gt;&lt;select class=&quot;form-control select2&quot; name=&quot;base_article[hardware_part_joins_attributes][0][part_id]&quot; id=&quot;base_article_hardware_0_name&quot; data-placeholder=&quot;Select a component&quot; data-type=&quot;hardware&quot; data-link-type=&quot;store_link&quot;&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;width:15%;&quot;&gt;&lt;div class=&quot;form-group integer optional base_article_hardware_part_joins_quantity&quot;&gt;&lt;label class=&quot;integer optional control-label times&quot; style=&quot;height:68px;padding-top:21px;&quot; for=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins_quantity&quot;&gt;&amp;times;&lt;/label&gt;&lt;input style=&quot;width:calc(100% - 30px) !important;height:68px;&quot; class=&quot;numeric integer optional form-control form-control&quot; min=&quot;1&quot; type=&quot;number&quot; step=&quot;1&quot; value=&quot;1&quot; name=&quot;base_article[hardware_part_joins_attributes][new_hardware_part_joins][quantity]&quot; id=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins_quantity&quot; /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;default-hidden&quot; data-name=&quot;part-comment&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;div class=&quot;form-group text optional base_article_hardware_part_joins_comment&quot;&gt;&lt;label class=&quot;text optional control-label&quot; for=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins_comment&quot;&gt;Comment&lt;/label&gt;&lt;textarea class=&quot;text optional form-control&quot; name=&quot;base_article[hardware_part_joins_attributes][new_hardware_part_joins][comment]&quot; id=&quot;base_article_hardware_part_joins_attributes_new_hardware_part_joins_comment&quot;&gt;
+&lt;/textarea&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;padding:5px 10px&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li&gt;&lt;a data-target=&quot;part-comment&quot; class=&quot;reveal btn btn-link btn-xs&quot; href=&quot;&quot;&gt;Add comment&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/li&gt;"></div>
+                                        <div id="software_part_joins_fields_blueprint" style="display: none"
+                                             data-blueprint="&lt;li class=&quot;fields&quot;&gt;&lt;table class=&quot;table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:white;padding:5px 0;&quot;&gt;&lt;div class=&quot;form-group hidden base_article_software_part_joins_id&quot;&gt;&lt;input class=&quot;hidden id&quot; type=&quot;hidden&quot; name=&quot;base_article[software_part_joins_attributes][new_software_part_joins][id]&quot; id=&quot;base_article_software_part_joins_attributes_new_software_part_joins_id&quot; /&gt;&lt;/div&gt;&lt;div class=&quot;form-group hidden base_article_software_part_joins_position&quot;&gt;&lt;input class=&quot;hidden position&quot; type=&quot;hidden&quot; value=&quot;0&quot; name=&quot;base_article[software_part_joins_attributes][new_software_part_joins][position]&quot; id=&quot;base_article_software_part_joins_attributes_new_software_part_joins_position&quot; /&gt;&lt;/div&gt;&lt;input data-field-type=&quot;type&quot; type=&quot;hidden&quot; value=&quot;software&quot; /&gt;&lt;input data-field-type=&quot;method&quot; type=&quot;hidden&quot; value=&quot;post&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;id&quot; type=&quot;quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;name&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;store_link&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;product_page_link&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;status&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;url&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;platform_id&quot; type=&quot;hidden&quot; /&gt;&lt;ul class=&quot;list-inline pull-right&quot;&gt;&lt;li&gt;&lt;a class=&quot;btn btn-default btn-xs move-up&quot; href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-angle-up&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;btn btn-default btn-xs move-down&quot; href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;input type=&quot;hidden&quot; value=&quot;false&quot; name=&quot;base_article[software_part_joins_attributes][new_software_part_joins][_destroy]&quot; id=&quot;base_article_software_part_joins_attributes_new_software_part_joins__destroy&quot; /&gt;&lt;a class=&quot;btn btn-danger btn-xs remove_nested_fields&quot; data-association=&quot;software_part_joins&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&quot;form-group&quot;&gt;&lt;label class=&quot;control-label&quot;&gt;&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;span&gt; App&lt;/span&gt;&lt;/label&gt;&lt;select class=&quot;form-control select2&quot; name=&quot;base_article[software_part_joins_attributes][0][part_id]&quot; id=&quot;base_article_software_0_name&quot; data-placeholder=&quot;Select an app&quot; data-type=&quot;software&quot; data-link-type=&quot;product_page_link&quot;&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;default-hidden&quot; data-name=&quot;part-comment&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;div class=&quot;form-group text optional base_article_software_part_joins_comment&quot;&gt;&lt;label class=&quot;text optional control-label&quot; for=&quot;base_article_software_part_joins_attributes_new_software_part_joins_comment&quot;&gt;Comment&lt;/label&gt;&lt;textarea class=&quot;text optional form-control&quot; name=&quot;base_article[software_part_joins_attributes][new_software_part_joins][comment]&quot; id=&quot;base_article_software_part_joins_attributes_new_software_part_joins_comment&quot;&gt;
+&lt;/textarea&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;padding:5px 10px&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li&gt;&lt;a data-target=&quot;part-comment&quot; class=&quot;reveal btn btn-link btn-xs&quot; href=&quot;&quot;&gt;Add comment&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/li&gt;"></div>
+                                        <div id="tool_part_joins_fields_blueprint" style="display: none"
+                                             data-blueprint="&lt;li class=&quot;fields&quot;&gt;&lt;table class=&quot;table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:white;padding:5px 0;&quot;&gt;&lt;div class=&quot;form-group hidden base_article_tool_part_joins_id&quot;&gt;&lt;input class=&quot;hidden id&quot; type=&quot;hidden&quot; name=&quot;base_article[tool_part_joins_attributes][new_tool_part_joins][id]&quot; id=&quot;base_article_tool_part_joins_attributes_new_tool_part_joins_id&quot; /&gt;&lt;/div&gt;&lt;div class=&quot;form-group hidden base_article_tool_part_joins_position&quot;&gt;&lt;input class=&quot;hidden position&quot; type=&quot;hidden&quot; value=&quot;0&quot; name=&quot;base_article[tool_part_joins_attributes][new_tool_part_joins][position]&quot; id=&quot;base_article_tool_part_joins_attributes_new_tool_part_joins_position&quot; /&gt;&lt;/div&gt;&lt;input data-field-type=&quot;type&quot; type=&quot;hidden&quot; value=&quot;tool&quot; /&gt;&lt;input data-field-type=&quot;method&quot; type=&quot;hidden&quot; value=&quot;post&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;id&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;name&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;store_link&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;product_page_link&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;status&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;url&quot; type=&quot;hidden&quot; /&gt;&lt;input class=&quot;reset&quot; data-field-type=&quot;platform_id&quot; type=&quot;hidden&quot; /&gt;&lt;ul class=&quot;list-inline pull-right&quot;&gt;&lt;li&gt;&lt;a class=&quot;btn btn-default btn-xs move-up&quot; href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-angle-up&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;btn btn-default btn-xs move-down&quot; href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;input type=&quot;hidden&quot; value=&quot;false&quot; name=&quot;base_article[tool_part_joins_attributes][new_tool_part_joins][_destroy]&quot; id=&quot;base_article_tool_part_joins_attributes_new_tool_part_joins__destroy&quot; /&gt;&lt;a class=&quot;btn btn-danger btn-xs remove_nested_fields&quot; data-association=&quot;tool_part_joins&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Delete&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&quot;form-group&quot;&gt;&lt;label class=&quot;control-label&quot;&gt;&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;span&gt; Tool&lt;/span&gt;&lt;/label&gt;&lt;select class=&quot;form-control select2&quot; name=&quot;base_article[tool_part_joins_attributes][0][part_id]&quot; id=&quot;base_article_tool_0_name&quot; data-placeholder=&quot;Select a tool&quot; data-type=&quot;tool&quot; data-link-type=&quot;store_link&quot;&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;default-hidden&quot; data-name=&quot;part-comment&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;div class=&quot;form-group text optional base_article_tool_part_joins_comment&quot;&gt;&lt;label class=&quot;text optional control-label&quot; for=&quot;base_article_tool_part_joins_attributes_new_tool_part_joins_comment&quot;&gt;Comment&lt;/label&gt;&lt;textarea class=&quot;text optional form-control&quot; name=&quot;base_article[tool_part_joins_attributes][new_tool_part_joins][comment]&quot; id=&quot;base_article_tool_part_joins_attributes_new_tool_part_joins_comment&quot;&gt;
+&lt;/textarea&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;padding:5px 10px&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li&gt;&lt;a data-target=&quot;part-comment&quot; class=&quot;reveal btn btn-link btn-xs&quot; href=&quot;&quot;&gt;Add comment&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/li&gt;"></div>
+                                    </form>
+                                </div>
+                                <div class="pe-panel" id="story" style="display:block">
+                                    <div class="pe-header"><h2>The story</h2>
+                                        <div class="subheading">What is your project about? Why did you decide to make
+                                            it? How does it work? Show us with images and videos!
+                                        </div>
+                                    </div>
+                                    <div data-anchor="story">
+                                        <div data-react-class="StoryEditor"
+                                             data-react-props="{&quot;AWSAccessKeyId&quot;:&quot;AKIAJIDYI4LI7VOFSTEQ&quot;,&quot;initAutoSaveEnabled&quot;:true,&quot;projectId&quot;:90740,&quot;projectHid&quot;:&quot;1760d4&quot;,&quot;modelType&quot;:&quot;BaseArticle&quot;,&quot;S3BucketURL&quot;:&quot;https://halckemy.s3.amazonaws.com&quot;}"></div>
+                                    </div>
+                                    <div class="pe-save2">
+                                        <div class="clearfix">
+                                            <div class="pe-error">Error saving</div>
+                                            <div class="pull-right"><a class="btn btn-link pe-discard"
+                                                                       href="/kafurakafiri/fwef-1760d4">Discard
+                                                changes</a><a class="btn btn-primary pe-submit"
+                                                              href="javascript:void(0);">Save changes</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pe-panel" id="attachments">
+                                    <form data-remote="true" class="simple_form form-horizontal remote sortable"
+                                          novalidate="novalidate" id="edit_base_article_90740"
+                                          action="/kafurakafiri/fwef-1760d4" accept-charset="UTF-8" method="post"><input
+                                            name="utf8" type="hidden" value="&#x2713;"/><input type="hidden"
+                                                                                               name="_method"
+                                                                                               value="patch"/><input
+                                            type="hidden" name="authenticity_token"
+                                            value="mcnOzqHiBfIrMMVaIINLQ7xRwmeb/37Slgl9Cwh7zcr8C8AIKY1tnelOqyWdPa7g6gphXSF0QCJG/1Jkr3IoFA=="/><input
+                                            name="panel" type="hidden" value="attachments"/><input name="save"
+                                                                                                   type="hidden"
+                                                                                                   value="1"/>
+                                        <div class="pe-header"><h2>Attachments</h2>
+                                            <div class="subheading">What else do you need to make this project? In this
+                                                section: code, schematics and CAD.
+                                            </div>
+                                        </div>
+                                        <div class="box" data-anchor="code">
+                                            <div class="box-title small-title"><h4>Code</h4></div>
+                                            <div class="box-content">
+                                                <div class="btn-group"><a
+                                                        class="btn btn-sm btn-default modal-open modal-reset"
+                                                        data-target="#code-editor-popup"><i
+                                                        class="fa fa-cloud-upload"></i> Upload or paste code</a><a
+                                                        class="btn btn-sm btn-default modal-open modal-reset"
+                                                        data-target="#code-repository-popup"><i class="fa fa-link"></i>
+                                                    Link existing repository</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box" data-anchor="schematics">
+                                            <div class="box-title small-title"><h4>Schematics and circuit diagrams</h4>
+                                            </div>
+                                            <div class="box-content"><p class="small text-muted">We recommend using <a
+                                                    target="_blank" href="http://fritzing.org">Fritzing.org</a> for
+                                                circuit diagrams. It's free and accessible to all skill levels.</p>
+                                                <div class="btn-group"><a
+                                                        class="btn btn-sm btn-default modal-open modal-reset"
+                                                        data-field-type="SchematicFileWidget"
+                                                        data-target="#upload-popup"><i class="fa fa-cloud-upload"></i>
+                                                    Upload image or file</a><a
+                                                        class="btn btn-sm btn-default modal-open modal-reset"
+                                                        data-target="#schematic-repo-popup"><i class="fa fa-link"></i>
+                                                    Link existing repository</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box" data-anchor="cad">
+                                            <div class="box-title small-title"><h4>CAD - Enclosures and custom
+                                                parts</h4></div>
+                                            <div class="box-content">
+                                                <div class="btn-group"><a
+                                                        class="btn btn-sm btn-default modal-open modal-reset"
+                                                        data-field-type="CadFileWidget" data-target="#upload-popup"><i
+                                                        class="fa fa-cloud-upload"></i> Upload file</a><a
+                                                        class="btn btn-sm btn-default modal-open modal-reset"
+                                                        data-target="#cad-repo-popup"><i class="fa fa-link"></i> Link
+                                                    existing repository</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="pe-save2">
+                                            <div class="clearfix">
+                                                <div class="pe-error">Error saving</div>
+                                                <div class="pull-right"><a class="btn btn-link pe-discard"
+                                                                           href="/kafurakafiri/fwef-1760d4">Discard
+                                                    changes</a><a class="btn btn-primary pe-submit"
+                                                                  href="javascript:void(0);">Save changes</a></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1"><p><strong>Checklist for publication</strong></p>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div id="checklist">
+                                        <ul class="fa-ul checklist">
+                                            <li><i class="fa fa-li fa-square-o"></i><a class="goto"
+                                                                                       data-target="cover_image"
+                                                                                       href="">Cover image</a></li>
+                                            <li><i class="fa fa-li fa-square-o"></i><a class="goto" data-target="story"
+                                                                                       href="">Story</a></li>
+                                            <li><i class="fa fa-li fa-square-o"></i><a class="goto" data-target="parts"
+                                                                                       href="">Components and apps</a>
+                                            </li>
+                                            <li><i class="fa fa-li fa-square-o"></i><a class="goto"
+                                                                                       data-target="schematics" href="">Schematics</a>
+                                            </li>
+                                            <li><i class="fa fa-li fa-square-o"></i><a class="goto" data-target="code"
+                                                                                       href="">Code</a></li>
+                                            <li class="todo-complete"><i class="fa fa-li fa-check-square-o"></i>Name
+                                            </li>
+                                            <li class="todo-complete"><i class="fa fa-li fa-check-square-o"></i>Elevator
+                                                pitch
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="small"><strong>Reference:</strong></p>
+                                    <ul class="small">
+                                        <li>
+                                            <a href="https://www.hackster.io/AlexWulff/how-to-create-a-high-quality-project-tutorial-e25feb">How
+                                                to create a high quality project</a></li>
+                                        <li><a href="/guidelines">Content guidelines</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-react-class="StoryEditorHelpBox"
+                                 data-react-props="{&quot;initAutoSaveEnabled&quot;:true}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        $(function() {
+            var elems = ['#basics', '#team', '#things', '#story', '#attachments'];
+            var navs = ['#basics-nav', '#team-nav', '#things-nav', '#story-nav', '#attachments-nav'];
+            var joined_navs = navs.join(', ');
+            var joined_elems = elems.join(', ');
+            $(joined_navs).click(function(ev) {
+                $(joined_navs).removeClass('active');
+                var nav_id = ev.target.id;
+                $('#' + nav_id).addClass('active');
+                var elem_id = nav_id.substr(0, nav_id.length - 4);
+                $(joined_elems).css('display', 'none');
+                var elem = $('#' + elem_id);
+                elem.css('display', 'block');
+                elem.parent().height(elem.height());
+            });
+
+            $('#story').resize(function(ev) {
+                $('#story').parent().height($('#story').height());
+            });
+        });
+    </script>
+{% endblock %}

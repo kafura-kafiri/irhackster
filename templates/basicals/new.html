@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block main %}
+    <div id="main">
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="box">
+                            <div class="box-title"><h2>Share your work with the community</h2></div>
+                            <div class="box-content">
+                                <div class="alert alert-info text-center"><p>Before you get started, make sure to
+                                    read: </p>
+                                    <p>• <a class="alert-link"
+                                            href="https://www.hackster.io/AlexWulff/how-to-create-a-high-quality-project-tutorial-e25feb">How
+                                        to create a high quality project</a></p>
+                                    <p>• <a class="alert-link" href="/guidelines">Content guidelines</a></p>
+                                    <p>We can't wait to see what you built! </p></div>
+                                <br/>
+                                <form class="simple_form accept-file-upload form-horizontal disable-on-submit"
+                                      novalidate="novalidate" id="new_base_article" action="/projects/+"
+                                      accept-charset="UTF-8" method="post"><input name="utf8" type="hidden"
+                                                                                  value="&#x2713;"/><input type="hidden"
+                                                                                                           name="authenticity_token"
+                                                                                                           value="tF7HsZCwiWsdzSOJcow0eNq8cW2wa6Yu2IoBN0wn2VIQjIj/0jYsadC5ONbbyzqvhp6ttT0zzYqgXVZes859NQ=="/>
+                                    <div class="form-group hidden base_article_type">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-8"><input class="hidden" type="hidden" value="Project"
+                                                                     name="base_article[type]" id="base_article_type"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group string optional base_article_name">
+                                        <div class="col-sm-4"><label class="string optional control-label"
+                                                                     for="base_article_name">Give it a short
+                                            title</label></div>
+                                        <div class="col-sm-8"><input class="string optional form-control" maxlength="60"
+                                                                     size="60" type="text" name="base_article[name]"
+                                                                     id="base_article_name"/><span class="help-block">Make it sound cool! Maximum 60 characters.</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text optional base_article_one_liner">
+                                        <div class="col-sm-4"><label class="text optional control-label"
+                                                                     for="base_article_one_liner">Elevator pitch</label>
+                                        </div>
+                                        <div class="col-sm-8"><textarea rows="4" class="text optional form-control"
+                                                                        maxlength="140" name="base_article[one_liner]"
+                                                                        id="base_article_one_liner">
+</textarea><span class="help-block">A short sentence that says it all. Maximum 140 characters.</span></div>
+                                    </div>
+                                    <div class="form-group hidden base_article_tags_string">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-8"><input class="hidden" type="hidden" value=""
+                                                                     name="base_article[tags_string]"
+                                                                     id="base_article_tags_string"/></div>
+                                    </div>
+                                    <div class="form-group hidden base_article_challenge_id">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-8"><input class="hidden" type="hidden"
+                                                                     name="base_article[challenge_id]"
+                                                                     id="base_article_challenge_id"/></div>
+                                    </div>
+                                    <div class="form-group hidden base_article_part_ids">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-8"><input class="hidden" type="hidden"
+                                                                     name="base_article[part_ids]"
+                                                                     id="base_article_part_ids"/></div>
+                                    </div>
+                                    <div data-react-class="ImageUploader"
+                                         data-react-props="{&quot;file_type&quot;:&quot;cover_image&quot;,&quot;human_file_type&quot;:&quot;Cover image&quot;,&quot;attribute_type&quot;:&quot;cover_image&quot;,&quot;image_version&quot;:&quot;cover_mini_thumb&quot;,&quot;model&quot;:&quot;base_article&quot;,&quot;help_block&quot;:&quot;A high quality image representing your work. It will be cropped to fit 4:3 format. 600x450px or higher recommended.&quot;,&quot;image_data&quot;:{&quot;id&quot;:null,&quot;file&quot;:{&quot;url&quot;:null},&quot;attachable_id&quot;:null,&quot;attachable_type&quot;:&quot;BaseArticle&quot;,&quot;created_at&quot;:null,&quot;updated_at&quot;:null,&quot;caption&quot;:null,&quot;title&quot;:null,&quot;position&quot;:null,&quot;tmp_file&quot;:null,&quot;use_alt&quot;:false},&quot;error&quot;:[],&quot;displayMode&quot;:&quot;inline&quot;,&quot;S3BucketURL&quot;:&quot;https://halckemy.s3.amazonaws.com&quot;,&quot;AWSAccessKeyId&quot;:&quot;AKIAJIDYI4LI7VOFSTEQ&quot;}"></div>
+                                    <div class="form-group">
+                                        <div class="col-md-8 col-md-offset-4"><input type="submit" name="commit"
+                                                                                     value="Continue"
+                                                                                     class="btn btn-primary btn-block btn-primary"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="hr">or</div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2 mg-40">
+                        <div class="box">
+                            <div class="box-content">
+                                <div id="project-import"><p class="text-center"><strong>Did you already write up your
+                                    project somewhere else on the web?</strong> Enter the URL below and we'll import it.<br/><strong>Note:</strong>
+                                    Our bot doesn't know how to import full websites, please enter only one web page at
+                                    a time.<br/><a href="/projects/imports/new">Click here to import multiple pages at
+                                        once.</a></p>
+                                    <div class="alert alert-danger" id="alert" style="display:none;"><p class="generic">
+                                        Something went wrong :/ Please make sure the URL you entered is publicly
+                                        accessible and try again.</p>
+                                        <div class="custom-alert"><p>The following errors happened:</p>
+                                            <ul></ul>
+                                        </div>
+                                    </div>
+                                    <form class="disable-on-submit" action="/projects/imports" accept-charset="UTF-8"
+                                          method="post"><input name="utf8" type="hidden" value="&#x2713;"/><input
+                                            type="hidden" name="authenticity_token"
+                                            value="CaMkKCR4NWWdR1DNduUfuvXbENbLBQTpmjeQ5xhfmtWtcWtmZv6QZ1AzS5LfohFtqfnMDkZdb03i4MeO57Y+sg=="/>
+                                        <div class="form-group"><input type="text" name="url" id="url"
+                                                                       placeholder="Page URL" class="form-control"/>
+                                            <p class="help-block" style="display:none">is required</p></div>
+                                        <input type="submit" name="commit" value="Import page"
+                                               class="btn btn-primary btn-block"/></form>
+                                </div>
+                                <div class="progress" id="progress-bar" style="display:none;">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                         style="width:5%">Importing...
+                                    </div>
+                                </div>
+                                <div id="done" style="display:none;"><p>Your project is ready! Our robots are not
+                                    perfect and may have missed a thing or two. Next: <a>Double check that your project
+                                        imported properly.</a></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

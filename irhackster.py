@@ -1,13 +1,19 @@
-from flask import Flask, jsonify
-from projects import blu
+from flask import Flask, jsonify, render_template, request
+from flask_cors import CORS
+from projects import blu as projects_blu
+from users import blu as users_blu
+from users.login import setup
 
 app = Flask(__name__)
-app.register_blueprint(blu)
+CORS(app)
+app.register_blueprint(projects_blu)
+app.register_blueprint(users_blu)
+setup(app)
 
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return render_template('home.html')
 
 
 @app.route('/users/api_token')
@@ -20,7 +26,20 @@ def dummy():
 
 @app.route('/v2/projects/<_id>', methods=['POST', 'GET', 'OPTION', 'PATCH'])
 def dummy_2(_id):
+    print(request.form)
+    print(request.values)
+    print(request.data)
     return ''
+
+
+@app.route('/kafurakafiri/<_id>', methods=['POST', 'GET', 'OPTION', 'PATCH'])
+def dummy_3(_id):
+    print(request.form)
+    return ''
+
+@app.route('/base')
+def base():
+    return render_template('base.html')
 
 
 if __name__ == '__main__':
